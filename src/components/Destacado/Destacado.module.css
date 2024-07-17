@@ -68,95 +68,107 @@
  
  */
 
- * {
-    box-sizing: border-box; 
-  }
-
+ 
  .destacado {
-    padding: 20px;
-    background-color: #201f24;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    width: 100%;
-  }
-  
-  .destacados {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2271d1; /* Color azul para resaltar */
-    margin-bottom: 10px; /* Reducir el espacio inferior */
-    font-weight: 900;
-    letter-spacing: 1px;
-  }
-  
-  .descripcionVideo {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .descripcionVideo p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666; /* Color de texto más suave */
-  }
-  
-  .tituloContainer h1 {
-    font-size: 28px; /* Aumentar tamaño del título */
-    margin-bottom: 5px; /* Reducir espacio inferior */
-  }
-  
-  .tituloVideo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333; /* Color de título más oscuro */
-  }
-  
-  .videoDestacado {
-    width: 100%;
-    height: 300px; /* Reducir altura para un aspecto más compacto */
-    margin-top: 15px; /* Ajustar margen superior */
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .videoDestacado iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  .nextArrow,
-  .prevArrow {
-    font-size: 24px;
+  padding: 20px;
+  background-color: #191d4b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 90%;
+  box-sizing: border-box; 
+  margin: 0 auto;
+  height: 100%;
+
+  color: whitesmoke;
+}
+
+.destacados {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2271d1; /* Color azul para resaltar */
+  margin-bottom: 10px; /* Reducir el espacio inferior */
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.descripcionVideo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.descripcionVideo p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4dffff; /* Color de texto más suave */
+  text-align: left;
+}
+
+.tituloContainer h1 {
+  font-size: 28px; /* Aumentar tamaño del título */
+  margin-bottom: 5px; /* Reducir espacio inferior */
+}
+
+.tituloVideo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e6e6e6; /* Color de título más oscuro */
+}
+
+.videoDestacado {
+  width: auto;
+  height: 300px; /* Reducir altura para un aspecto más compacto */
+  margin-top: 15px; /* Ajustar margen superior */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.videoDestacado iframe {
+  width: 50%;
+  height: 100%;
+  border: none;
+}
+
+.nextArrow,
+.prevArrow {
+    font-size: 30px; /* Cambiar tamaño de las flechas */
     color: #2271d1; /* Color azul para las flechas */
     background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
     padding: 10px; /* Aumentar tamaño de la flecha */
     border-radius: 50%; /* Estilo redondeado */
     transition: background-color 0.3s ease; /* Transición suave */
-  }
-  
-  .nextArrow:hover,
-  .prevArrow:hover {
-    background-color: rgba(255, 255, 255, 1); /* Blanco sólido al pasar el mouse */
-  }
-  
-  .nextArrow {
-    position: absolute;
-    top: 50%;
-    right: 10px; /* Ajustar posición */
-    transform: translateY(-50%);
-  }
-  
-  .prevArrow {
-    position: absolute;
-    top: 50%;
-    left: 10px; /* Ajustar posición */
-    transform: translateY(-50%);
-    background-color: #333;
-    color: #333;
-  }
+}
+
+
+.nextArrow:hover,
+.prevArrow:hover {
+  background-color: rgba(255, 255, 255, 1); /* Blanco sólido al pasar el mouse */
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 30px; /* Ajustar posición */
+  transform: translateY(-50%);
+}
+
+.prevArrow {
+  position: absolute;
+  top: 50%;
+  left: 30px; /* Ajustar posición */
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #640000;
+}
+
+
+
+
+
+
   
   
 
