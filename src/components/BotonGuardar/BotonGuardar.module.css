@@ -1,0 +1,20 @@
+.boton{
+    background-color: var(--negro);
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 32px;
+    border: 1px solid  #2271D1;
+    color: #ffffff;
+    margin: 32px 0;
+    cursor: pointer;
+    width: 180.13px;
+    height: 54px;
+    letter-spacing: 1px;
+}
+
+.boton:hover{
+    color: #2271D1;
+}
+

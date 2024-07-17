@@ -1,0 +1,162 @@
+/* .destacado {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #111dff00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.descripcionVideo > :first-child {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+  }
+
+.videoDestacado {
+    width: 50%; 
+    position: relative;
+    padding-bottom: 30%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.videoDestacado iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+.descripcionVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 500px;
+    gap: 20px;
+}
+
+.descripcionVideo p {
+    text-align: left;
+    line-height: 2;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.tituloContainer {
+    margin: 0 auto;
+}
+
+.tituloVideo {
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 46px;
+}
+ 
+ */
+
+ * {
+    box-sizing: border-box; 
+  }
+
+ .destacado {
+    padding: 20px;
+    background-color: #201f24;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+  }
+  
+  .destacados {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2271d1; /* Color azul para resaltar */
+    margin-bottom: 10px; /* Reducir el espacio inferior */
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  
+  .descripcionVideo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .descripcionVideo p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Color de texto más suave */
+  }
+  
+  .tituloContainer h1 {
+    font-size: 28px; /* Aumentar tamaño del título */
+    margin-bottom: 5px; /* Reducir espacio inferior */
+  }
+  
+  .tituloVideo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Color de título más oscuro */
+  }
+  
+  .videoDestacado {
+    width: 100%;
+    height: 300px; /* Reducir altura para un aspecto más compacto */
+    margin-top: 15px; /* Ajustar margen superior */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .videoDestacado iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .nextArrow,
+  .prevArrow {
+    font-size: 24px;
+    color: #2271d1; /* Color azul para las flechas */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco transparente */
+    padding: 10px; /* Aumentar tamaño de la flecha */
+    border-radius: 50%; /* Estilo redondeado */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  .nextArrow:hover,
+  .prevArrow:hover {
+    background-color: rgba(255, 255, 255, 1); /* Blanco sólido al pasar el mouse */
+  }
+  
+  .nextArrow {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Ajustar posición */
+    transform: translateY(-50%);
+  }
+  
+  .prevArrow {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Ajustar posición */
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #333;
+  }
+  
+  
+

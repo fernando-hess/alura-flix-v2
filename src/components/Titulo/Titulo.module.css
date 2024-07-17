@@ -1,0 +1,21 @@
+.text {
+    /* background-color: #6BD1FF; */
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 16px;
+    /* margin: 20px; */
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+
+    /* margin-left: 50px; */
+    align-self: flex-start;
+    height: 70px;
+    width: 432px;
+    margin: 0 auto;
+  }
+
+  .text h1 {
+    font-size: 30px;
+  }

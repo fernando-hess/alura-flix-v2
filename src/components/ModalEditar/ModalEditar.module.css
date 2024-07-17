@@ -1,0 +1,71 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    padding: 20px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    z-index: 1000;
+    color: var(--blanco);
+    width: 75%;
+    max-width: 600px;
+    max-height: 90%; 
+    overflow-y: auto; 
+  }
+  
+  .modal h2 {
+    text-align: left;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px 0;
+    margin: 20px 0;
+    font-size: 2em;
+  }
+  
+  /* .modal button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  } */
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .BotonGuardarEditar,
+  .BotonGuardarCerrar {
+    background-color: var(--negro);
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 32px;
+    border: 1px solid  #2271D1;
+    color: #ffffff;
+    margin: 32px 0;
+    cursor: pointer;
+    width: 180.13px;
+    height: 54px;
+    letter-spacing: 1px;
+  }
+
+  .botones {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+  
