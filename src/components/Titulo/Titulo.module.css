@@ -5,17 +5,21 @@
     text-align: center;
     font-size: 16px;
     /* margin: 20px; */
-    border-radius: 10px;
-    display: inline-block;
+    border-radius: 20px 0 20px 0;
+    display: flex;
     font-weight: bold;
-
+    border-top: 5px solid;
+    border-bottom: 5px solid;
     /* margin-left: 50px; */
     align-self: flex-start;
     height: 70px;
     width: 432px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .text h1 {
     font-size: 30px;
+    text-align: center;
   }

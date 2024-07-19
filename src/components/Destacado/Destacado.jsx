@@ -1,33 +1,3 @@
-// import Card from "../Card";
-// import Titulo from "../Titulo";
-// import styles from "./Destacado.module.css"
-
-// const Destacado = () => {
-//     return (
-//         <section className={styles.destacado}>
-//             <div>
-//                 <Titulo>
-//                     <h1>categoria</h1>
-//                 </Titulo>
-//                 <h2>titulo</h2>
-//                 <p>descripcion</p>
-//             </div>
-
-//             <div className={styles.videoDestacado}>
-                
-
-//             </div>
-
-
-//         </section>
-//     )
-// }
-
-// export default Destacado;
-
-
-
-
 import React, { useEffect, useState, useRef } from "react";
 import Slider from "react-slick";
 import Titulo from "../Titulo";
@@ -40,7 +10,19 @@ const NextArrow = (props) => {
   return (
     <div
       className={`${className} ${styles.nextArrow}`}
-      style={{ ...style }}
+      style={{
+        ...style,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#66f7ff',
+        color: '#ffffff',
+        borderRadius: '50%',
+        padding: '10px',
+        fontSize: '30px',
+        cursor: 'pointer',
+        zIndex: 1,
+      }}
       onClick={onClick}
     >
       →
@@ -53,7 +35,19 @@ const PrevArrow = (props) => {
   return (
     <div
       className={`${className} ${styles.prevArrow}`}
-      style={{ ...style }}
+      style={{
+        ...style,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#66f7ff',
+        color: '#fff9f9',
+        borderRadius: '50%',
+        padding: '10px',
+        fontSize: '30px',
+        cursor: 'pointer',
+        zIndex: 1,
+      }}
       onClick={onClick}
     >
       ←
@@ -97,7 +91,7 @@ const Destacado = () => {
     ) {
       const videoId = urlObj.searchParams.get("v");
       if (videoId) {
-        return `https://www.youtube.com/embed/${videoId}?autoplay=0`;
+        return `https://www.youtube.com/embed/${videoId}?autoplay=1&&mute=1`;
       }
     }
     return url;
@@ -109,8 +103,9 @@ const Destacado = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    //Corregir flechas
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     beforeChange: (oldIndex, newIndex) => {
       if (videoRefs.current[oldIndex]) {
         videoRefs.current[oldIndex].contentWindow.postMessage(
@@ -120,7 +115,7 @@ const Destacado = () => {
       }
     },
     afterChange: (index) => {
-      setActiveSlide(index); // Actualiza el slide activo
+      setActiveSlide(index);
     },
   };
 
@@ -147,7 +142,7 @@ const Destacado = () => {
           <div key={video.id}>
             <div className={styles.descripcionVideo}>
               <div className={styles.tituloContainer}>
-                <Titulo color="#083369">
+                <Titulo color="#00aac1">
                   <h1>{video.categoria}</h1>
                 </Titulo>
               </div>
@@ -155,7 +150,6 @@ const Destacado = () => {
               <p>{video.descripcion}</p>
             </div>
             <div className={styles.videoDestacado}>
-              {/* Renderiza el iframe solo si es el slide activo */}
               {activeSlide === index && (
                 <iframe
                   ref={(el) => (videoRefs.current[index] = el)}
@@ -178,23 +172,4 @@ const Destacado = () => {
 };
 
 export default Destacado;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
